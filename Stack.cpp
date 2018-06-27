@@ -3,8 +3,8 @@
 using namespace std;
 
 #define MAXNUM 10
-//Stack ±¸Çö
-//FIFO
+//Stack êµ¬í˜„
+//LIFO
 
 
 class Stack
@@ -19,19 +19,19 @@ public:
 	int num[MAXNUM];
 	int index = 0;
 
-	//¹è¿­ »çÀÌÁî ¹İÈ¯
+	//ë°°ì—´ ì‚¬ì´ì¦ˆ ë°˜í™˜
 	int Size()
 	{
 		return index;
 	}
 
-	//µ¥ÀÌÅÍ »ğÀÔ
+	//ë°ì´í„° ì‚½ì…
 	void Push_back(int _num)
 	{
 
 		if (index == MAXNUM)
 		{
-			cout << "´õÀÌ»ó ³ÖÀ» °ø°£ÀÌ ¾ø½À´Ï´Ù" << endl;
+			cout << "ë”ì´ìƒ ë„£ì„ ê³µê°„ì´ ì—†ìŠµë‹ˆë‹¤" << endl;
 		}
 		else if (index < MAXNUM)
 		{
@@ -40,12 +40,12 @@ public:
 
 		index++;
 	}
-	//µ¥ÀÌÅÍ »èÁ¦
+	//ë°ì´í„° ì‚­ì œ
 	void Pop_back()
 	{
 		if (index == 0)
 		{
-			cout << "´õÀÌ»ó »¬ µ¥ÀÌÅÍ°¡ ¾ø½À´Ï´Ù" << endl;
+			cout << "ë”ì´ìƒ ëº„ ë°ì´í„°ê°€ ì—†ìŠµë‹ˆë‹¤" << endl;
 		}
 
 		index--;
