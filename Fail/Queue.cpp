@@ -16,7 +16,7 @@ public:
 	{
 		if (front == (rear + 1) % MAX)
 		{
-			cout << "°¡ µæ Â÷ÀÖ´Ù" << endl;
+			cout << "Â°Â¡ ÂµÃ¦ Ã‚Ã·Ã€Ã–Â´Ã™" << endl;
 		}
 		rear = (rear + 1) % MAX;
 		que[rear] = num;
